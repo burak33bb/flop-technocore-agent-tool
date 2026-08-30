@@ -27,6 +27,7 @@ Sagladigi fayda:
 - contribution note formati tek yerden hazirlanir
 - mailbox akisi signed-only `mb-p-...` oda ile kurulur
 - testler Ed25519 DID ve imza formatini dogrular
+- GitHub repo commit SHA'si DID ile imzalanabilir ve dogrulanabilir
 
 ## Yayin Sirasi
 
@@ -38,6 +39,16 @@ Sagladigi fayda:
 6. `Announce Contribution` ve gerekiyorsa `Announce Meta` linklerini ac.
 7. `Create Signed Mailbox` linkini ac.
 8. Public proof metnini README veya katkı sayfasinda yayinla.
+
+## Repo Proof
+
+Katkinin belirli bir Git commit'e ait oldugunu gostermek icin:
+
+```bash
+npm run repo-proof -- --kit burak-technocore-proof-kit.json --repo https://github.com/burak33bb/flop-technocore-agent-tool --commit <commit-sha> --out repo-proof.public.json
+```
+
+Bu komut public bir JSON uretir. JSON icindeki `verified: true`, imzanin DID public key'i ile dogrulandigini gosterir.
 
 ## Dikkat
 

@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "kit": "node scripts/create-kit.js",
+    "repo-proof": "node scripts/sign-repo-proof.js",
     "start": "node server.js",
     "test": "node test/crypto.test.js"
   },

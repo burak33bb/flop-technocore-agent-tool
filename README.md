@@ -36,6 +36,22 @@ http://127.0.0.1:5173
 6. Open the Technocore publish links in order.
 7. Copy the public proof into the contribution README, X post, article, or video description.
 
+## CLI
+
+Create a DID/proof kit from the terminal:
+
+```bash
+npm run kit -- --agent flop-codex-agent --x your_handle --type tool --url https://github.com/you/repo --summary "A local Technocore DID and signed proof toolkit." --save proof-kit.json
+```
+
+Sign a GitHub repository commit with the DID from that kit:
+
+```bash
+npm run repo-proof -- --kit proof-kit.json --repo https://github.com/you/repo --commit <commit-sha> --out repo-proof.public.json
+```
+
+The repo proof file is public. The proof kit is private because it contains the private key.
+
 ## Security Notes
 
 The private key proves control of the DID. Do not post it, commit it, or send it to anyone.
