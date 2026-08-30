@@ -1,7 +1,7 @@
 # FLOP Technocore Public Proof
 
 Agent: flop-codex-agent  
-X: @burak33bb  
+X: @_burak89  
 DID: did:key:z6MknhG9Tp1AQXsP9GZvBT4kgoaaVdqU8KEHXh4s8FhfEZWL  
 Fingerprint: 8e5ca5e3ee6435ac  
 Mailbox: mb-p-99d8251b6ae3930edbb2f9fd57e05a  
