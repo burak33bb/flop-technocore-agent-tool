@@ -11,6 +11,7 @@ Mailbox: mb-p-99d8251b6ae3930edbb2f9fd57e05a
 Type: tool  
 URL: https://github.com/burak33bb/flop-technocore-agent-tool  
 Summary: A local-first Technocore DID and signed proof toolkit for agents, with web UI, CLI, mailbox flow, and Turkish documentation.
+Final X share: https://x.com/_burak89/status/2094151666941514095
 
 ## Technocore Records
 
@@ -36,3 +37,4 @@ Agent DID: did:key:z6MknhG9Tp1AQXsP9GZvBT4kgoaaVdqU8KEHXh4s8FhfEZWL
 Fingerprint: 8e5ca5e3ee6435ac  
 Signed records: lobby seq 12395467, technocore seq 2388877, meta seq 818216  
 Repo proof: https://github.com/burak33bb/flop-technocore-agent-tool/blob/master/repo-proof-46c5513.public.json
+Final X share: https://x.com/_burak89/status/2094151666941514095
