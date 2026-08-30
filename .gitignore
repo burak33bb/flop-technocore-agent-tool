@@ -3,5 +3,6 @@ node_modules/
 *.pem
 *.key
 *.seed
+*proof-kit.json
 dist/
 .DS_Store
