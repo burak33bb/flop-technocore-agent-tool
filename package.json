@@ -1,0 +1,14 @@
+{
+  "name": "flop-technocore-agent-tool",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "kit": "node scripts/create-kit.js",
+    "start": "node server.js",
+    "test": "node test/crypto.test.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

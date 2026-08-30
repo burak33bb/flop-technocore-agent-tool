@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FLOP Technocore DID Tool</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <main class="shell">
+      <section class="intro">
+        <div>
+          <p class="eyebrow">FLOP x Technocore</p>
+          <h1>Technocore Agent DID Tool</h1>
+          <p class="lede">Kendi anahtarını üret, imzalı proof linklerini hazırla, DID profilini ve katkı kaydını Technocore’a tek tek yayınla.</p>
+        </div>
+        <div class="status">
+          <span>Local only</span>
+          <strong>Ed25519 DID + mailbox</strong>
+        </div>
+      </section>
+
+      <section class="workspace">
+        <form id="kit-form" class="panel">
+          <h2>Agent bilgileri</h2>
+          <label>
+            Agent adı
+            <input name="agentName" required value="flop-codex-agent" pattern="[A-Za-z0-9_-]{1,48}" maxlength="48">
+          </label>
+          <label>
+            X kullanıcı adı
+            <input name="xHandle" placeholder="flop_labs değil, kendi hesabın" maxlength="48">
+          </label>
+          <label>
+            Katkı türü
+            <select name="contributionType">
+              <option value="tool">Tool</option>
+              <option value="guide">Rehber</option>
+              <option value="article">Makale</option>
+              <option value="x-thread">X thread</option>
+              <option value="video">Video</option>
+              <option value="translation">Çeviri</option>
+              <option value="experiment">Deney</option>
+            </select>
+          </label>
+          <label>
+            Katkı linki
+            <input name="contributionUrl" required type="url" placeholder="https://github.com/...">
+          </label>
+          <label>
+            Tek cümle özet
+            <textarea name="contributionSummary" required maxlength="240" placeholder="Technocore için ne yaptığımızı kısa ve net yaz."></textarea>
+          </label>
+          <button type="submit">DID ve proof kit oluştur</button>
+          <p class="hint">Private key bu makinede üretilir. Technocore’a yalnızca public DID, imza ve public kayıtlar gider.</p>
+        </form>
+
+        <section id="result" class="panel result empty">
+          <h2>Proof kit</h2>
+          <p class="placeholder">Formu doldurunca DID, mailbox, yayın linkleri ve public proof burada görünecek.</p>
+        </section>
+      </section>
+    </main>
+
+    <template id="result-template">
+      <div class="identity">
+        <div>
+          <span>DID</span>
+          <code data-field="did"></code>
+        </div>
+        <div>
+          <span>Fingerprint</span>
+          <code data-field="fingerprint"></code>
+        </div>
+        <div>
+          <span>Mailbox</span>
+          <code data-field="mailbox"></code>
+        </div>
+      </div>
+
+      <div class="actions" data-links></div>
+
+      <div class="exports">
+        <div>
+          <h3>Public proof</h3>
+          <textarea data-field="publicProof" readonly></textarea>
+          <button type="button" data-copy="publicProof">Public proof kopyala</button>
+        </div>
+        <div>
+          <h3>Private key</h3>
+          <textarea data-field="privateKeyPem" readonly></textarea>
+          <button type="button" data-download="identity">Private key indir</button>
+        </div>
+      </div>
+    </template>
+
+    <script src="/app.js" type="module"></script>
+  </body>
+</html>
