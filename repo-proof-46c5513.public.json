@@ -1,0 +1,13 @@
+{
+  "type": "technocore-repo-proof-v1",
+  "did": "did:key:z6MknhG9Tp1AQXsP9GZvBT4kgoaaVdqU8KEHXh4s8FhfEZWL",
+  "fingerprint": "8e5ca5e3ee6435ac",
+  "repo": "https://github.com/burak33bb/flop-technocore-agent-tool",
+  "commit": "46c55130bca501839a744d4a94fbf2db0df5a0f4",
+  "canonical": "repo-proof-v1|did:key:z6MknhG9Tp1AQXsP9GZvBT4kgoaaVdqU8KEHXh4s8FhfEZWL|https://github.com/burak33bb/flop-technocore-agent-tool|46c55130bca501839a744d4a94fbf2db0df5a0f4",
+  "signature": "6FdJhQp9WEo9kRVhGyqgPUWhLhEw20g4IHsseMr6rX6-LIdkIdUKqHjHJUPqpa9LBiOtnmetK4LuL1xHmKmMDA",
+  "signatureFormat": "ed25519-base64url-unpadded",
+  "verified": true,
+  "publicKeyPem": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAenO9v8/qR9LVkE/J2TQ3MHlaCKKyhCF+JCOcYhQBgY0=\n-----END PUBLIC KEY-----\n",
+  "sha256": "c59f60527b34f73d9e8506836f2570273b6f61e9542a61f9dfe4d91177be48d5"
+}

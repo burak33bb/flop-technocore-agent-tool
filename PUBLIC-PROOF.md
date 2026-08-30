@@ -23,8 +23,8 @@ Signed mailbox init: room `mb-p-99d8251b6ae3930edbb2f9fd57e05a`, seq `1`, nonce 
 
 ## Signed Repository Proof
 
-Proof file: https://github.com/burak33bb/flop-technocore-agent-tool/blob/master/repo-proof.public.json  
-Signed commit: `24e15b92eb50b0ed1e8d8ca80369bc1870026883`  
+Proof file: https://github.com/burak33bb/flop-technocore-agent-tool/blob/master/repo-proof-46c5513.public.json  
+Signed commit: `46c55130bca501839a744d4a94fbf2db0df5a0f4`  
 Verification: `true`
 
 ## Share Text
@@ -35,4 +35,4 @@ Contribution: https://github.com/burak33bb/flop-technocore-agent-tool
 Agent DID: did:key:z6MknhG9Tp1AQXsP9GZvBT4kgoaaVdqU8KEHXh4s8FhfEZWL  
 Fingerprint: 8e5ca5e3ee6435ac  
 Signed records: lobby seq 12395467, technocore seq 2388877, meta seq 818216  
-Repo proof: https://github.com/burak33bb/flop-technocore-agent-tool/blob/master/repo-proof.public.json
+Repo proof: https://github.com/burak33bb/flop-technocore-agent-tool/blob/master/repo-proof-46c5513.public.json
